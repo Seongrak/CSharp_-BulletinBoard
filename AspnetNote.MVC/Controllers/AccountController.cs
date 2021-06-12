@@ -1,6 +1,7 @@
 ﻿using AspnetNote.MVC.DataContent;
 using AspnetNote.MVC.Models;
 using AspnetNote.MVC.ViewModel;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -37,7 +38,9 @@ namespace AspnetNote.MVC.Controllers
                     if (user != null)
                     {
                         // Login Success
+                        HttpContext.Session.SetInt32("USER_LOGIN_KEY",user.UserNo); // Session Middleware 
                         return RedirectToAction("LoginSuccess", "Home");
+
                     }
                 }
 
@@ -46,6 +49,12 @@ namespace AspnetNote.MVC.Controllers
 
             }
             return View(model);
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("USER_LOGIN_KEY");
+            return RedirectToAction("Index", "Home");
         }
 
 

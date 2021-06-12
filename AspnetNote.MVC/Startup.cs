@@ -31,6 +31,8 @@ namespace AspnetNote.MVC
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //Session Middleware(Register)
+            services.AddSession();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -51,6 +53,9 @@ namespace AspnetNote.MVC
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
+            //Session Middleware(Use)
+            app.UseSession();
 
             app.UseMvc(routes =>
             {
