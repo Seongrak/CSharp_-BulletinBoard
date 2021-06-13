@@ -33,3 +33,6 @@ C:\Users\rak\Desktop\C#_dotnetCore\AspnetNote\AspnetNote.MVC\obj\Debug\netcoreap
 C:\Users\rak\Desktop\C#_dotnetCore\AspnetNote\AspnetNote.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\rak\Desktop\C#_dotnetCore\AspnetNote\AspnetNote.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\rak\Desktop\C#_dotnetCore\AspnetNote\AspnetNote.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\LoginSuccess.cshtml.g.cs
+C:\Users\rak\Desktop\C#_dotnetCore\AspnetNote\AspnetNote.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Note\Add.cshtml.g.cs
+C:\Users\rak\Desktop\C#_dotnetCore\AspnetNote\AspnetNote.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Note\Edit.cshtml.g.cs
+C:\Users\rak\Desktop\C#_dotnetCore\AspnetNote\AspnetNote.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Note\Index.cshtml.g.cs
