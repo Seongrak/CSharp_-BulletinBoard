@@ -9,6 +9,7 @@
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/Trumbowyg/ui/trumbowyg.min.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
@@ -36,18 +37,18 @@
                 </ul>
 
                 @* Login *@
-            <ul class="nav navbar-nav navbar-right">
-                @if (Context.Session.GetInt32("USER_LOGIN_KEY") == null)
-                {
-                    <li><a asp-area="" asp-controller="Account" asp-action="Login">Login</a></li>
-                    <li><a asp-area="" asp-controller="Account" asp-action="Register">Sign-in</a></li>
-                }
-                else
-                {
-                    <li><a asp-area="" asp-controller="Account" asp-action="Logout">Logout</a></li>
-                }
+                <ul class="nav navbar-nav navbar-right">
+                    @if (Context.Session.GetInt32("USER_LOGIN_KEY") == null)
+                    {
+                        <li><a asp-area="" asp-controller="Account" asp-action="Login">Login</a></li>
+                        <li><a asp-area="" asp-controller="Account" asp-action="Register">Sign-in</a></li>
+                    }
+                    else
+                    {
+                        <li><a asp-area="" asp-controller="Account" asp-action="Logout">Logout</a></li>
+                    }
 
-            </ul>
+                </ul>
             </div>
         </div>
     </nav>
@@ -65,7 +66,10 @@
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/Trumbowyg/trumbowyg.min.js"></script>
+        <script src="~/Trumbowyg/plugins/upload/trumbowyg.upload.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
+
     </environment>
     <environment exclude="Development">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"

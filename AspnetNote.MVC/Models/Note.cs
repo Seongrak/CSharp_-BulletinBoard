@@ -14,7 +14,7 @@ namespace AspnetNote.MVC.Models
         /// <summary>
         /// Note Title
         /// </summary>
-        [Required]
+        [Required(ErrorMessage ="Please Type the Title")]
         public string NoteTitle { get; set; }
 
         /// <summary>
